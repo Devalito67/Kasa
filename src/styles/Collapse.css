@@ -1,0 +1,43 @@
+.info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.titleInfo {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.titleInfo h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.descriptionInfo {
+    padding: 15px 20px 20px 20px;
+    display: none;
+}
+
+.descriptionInfo-open {
+    display: flex;
+}
+
+.descriptionInfo p{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.collapse-toggle-button-close{
+    transform: rotate(-180deg);
+    transition: all 0.5s;
+}
+
+.collapse-toggle-button {
+    transition: all 0.5s;
+}

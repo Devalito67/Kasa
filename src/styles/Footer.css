@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 66px;
+    padding-bottom: 29px;
+    row-gap: 28.5px;
+    color: white;
+}
+
+.footer p {
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+    justify-content: flex-end;
+}
