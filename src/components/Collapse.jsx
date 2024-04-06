@@ -1,46 +1,43 @@
-import { useState } from "react"
-import "/src/styles/Collapse.css"
+import { useState } from "react";
+import "/src/styles/Collapse.css";
 
-function Collapse() {
-    const [isOpen, setIsOpen] = useState(false)
+function Collapse({ title, content }) {
+    const [isOpen, setIsOpen] = useState(false);
 
+    const renderContent = () => {
+        if (typeof content === "string") {
+            return <p>{content}</p>;
+        } else if (Array.isArray(content)) {
+            return (
+                <ul>
+                    {content.map((contentData, index) => (
+                        <li key={index}>{contentData}</li>
+                    ))}
+                </ul>
+            );
+        } else {
+            return null; // If content is neither string nor array
+        }
+    };
 
-    return isOpen ? (
+    return (
         <div className="collapse">
             <div className="info">
                 <div className="titleInfo">
-                    <h3>Fiabilité</h3>
+                    <h3>{title}</h3>
                     <button
-                        className='collapse-toggle-button-close'
-                        onClick={() => setIsOpen(false)}
+                        className={`collapse-toggle-button ${isOpen ? '' : 'close-collapse'}`}
+                        onClick={() => setIsOpen(!isOpen)}
                     >
                         <img src="/src/assets/arrow_back.svg" alt="" />
                     </button>
                 </div>
-                <div className="descriptionInfo-open">
-                    <p>Les annonces postées sur Kasa garantissent une fiablilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièremnt vérifiées par nos équipes.</p>
+                <div className={`descriptionInfo ${isOpen ? 'open' : ''}`}>
+                    {renderContent()}
                 </div>
             </div>
         </div>
-    ) : (
-
-        <div className="collapse">
-            <div className="info">
-                <div className="titleInfo">
-                    <h3>Fiabilité</h3>
-                    <button
-                        className='collapse-toggle-button'
-                        onClick={() => setIsOpen(true)}
-                    >
-                        <img src="/src/assets/arrow_back.svg" alt="" />
-                    </button>
-                </div>
-                <div className="descriptionInfo">
-                    <p>Les annonces postées sur Kasa garantissent une fiablilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièremnt vérifiées par nos équipes.</p>
-                </div>
-            </div>
-        </div>
-    )
+    );
 }
 
-export default Collapse
+export default Collapse;

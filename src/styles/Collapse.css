@@ -2,6 +2,8 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 .titleInfo {
@@ -20,24 +22,36 @@
 
 .descriptionInfo {
     padding: 15px 20px 20px 20px;
-    display: none;
-}
-
-.descriptionInfo-open {
+    position: absolute;
     display: flex;
+    top: -60px;
+    transition: top 0.5s;
+    z-index: -5;
+    height: 0;
 }
 
-.descriptionInfo p{
+.open {
+    display: flex;
+    top: 0px;
+    transition: top 0.5s;
+    position:relative;
+    height:auto;
+}
+
+.descriptionInfo p {
     color: black;
     font-size: 18px;
     font-weight: 400;
 }
 
-.collapse-toggle-button-close{
+.close-collapse {
     transform: rotate(-180deg);
     transition: all 0.5s;
 }
 
 .collapse-toggle-button {
     transition: all 0.5s;
+    background-color: transparent;
+    border: none;
+    height: 32px;
 }

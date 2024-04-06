@@ -1,10 +1,14 @@
 import "/src/styles/Banner.css"
 
 function Banner(props) {
-return <div className="banner">
-    <img src={props.img} alt="" />
-            <h1>props.titre</h1>
+    const bannerClass = props.filter ? "banner filter" : "banner";
+
+    return (
+        <div className={bannerClass}>
+            <img src={props.img} alt="" />
+            <h1>{props.title}</h1>
         </div>
+    );
 }
 
-export default Banner
+export default Banner;
