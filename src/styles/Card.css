@@ -1,18 +1,32 @@
 .card {
     height: 340px;
-    width: 340px;
+    max-width: 340px;
+    width: 100%;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
+    background-color: #ff6060;
+    overflow: hidden;
+    flex: auto;
 }
 
 .card img {
-    width: 100%;
-    border-radius: 10px;
-    position: relative;
+    display: flex;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-infos{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    padding: 20px;
 }
 
 .card h3 {
-    position: absolute;
     color: #FFF;
     font-size: 18px;
     font-style: normal;

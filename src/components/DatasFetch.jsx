@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Card from "./Card";
 import "/src/styles/DataFetch.css";
 
 function DataFetch() {
@@ -18,14 +17,7 @@ function DataFetch() {
 
     fetchData();
   }, []);
-return (
-    <div className="cards_container">
-      {dataList.map((data) => (
-        <Card key={data.id} cardInfo={data} />
-      ))}
-    </div>
-  );
-
+return dataList;
 }
 
 export default DataFetch;

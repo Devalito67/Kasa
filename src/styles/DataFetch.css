@@ -1,11 +1,13 @@
 .cards_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 25px;
-    grid-row-gap: 60px;
+    row-gap: 60px;
     justify-items: center;
     margin: 0 auto;
     background-color: #f6f6f6;
     padding-top: 56px;
     padding-bottom: 43px;
+    justify-content: space-evenly;
+    flex-direction: row;
 }

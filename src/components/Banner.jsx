@@ -5,7 +5,7 @@ function Banner(props) {
 
     return (
         <div className={bannerClass}>
-            <img src={props.img} alt="" />
+            <img src={props.img} alt="image banniere" />
             <h1>{props.title}</h1>
         </div>
     );

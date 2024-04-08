@@ -1,0 +1,21 @@
+.tags {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.tags button {
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    background-color: #ff6060;
+    border-radius: 10px;
+    width: 115px;
+    min-height: 25px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
