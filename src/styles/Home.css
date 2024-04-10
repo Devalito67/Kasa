@@ -1,0 +1,15 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 43px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.home-container .banner {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.home-container .banner img {
+  mix-blend-mode: darken;
+}

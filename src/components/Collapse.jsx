@@ -16,25 +16,23 @@ function Collapse({ title, content }) {
                 </ul>
             );
         } else {
-            return null; // If content is neither string nor array
+            return null;
         }
     };
 
     return (
         <div className="collapse">
-            <div className="info">
-                <div className="titleInfo">
-                    <h3>{title}</h3>
-                    <button
-                        className={`collapse-toggle-button ${isOpen ? '' : 'close-collapse'}`}
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
-                        <img src="/src/assets/arrow_back.svg" alt="" />
-                    </button>
-                </div>
-                <div className={`descriptionInfo ${isOpen ? 'open' : ''}`}>
-                    {renderContent()}
-                </div>
+            <div className="titleInfo">
+                <h3>{title}</h3>
+                <button
+                    className={`collapse-toggle-button ${isOpen ? '' : 'close-collapse'}`}
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    <img src="/src/assets/arrow_back.svg" alt="" />
+                </button>
+            </div>
+            <div className={`descriptionInfo ${isOpen ? 'open' : ''}`}>
+                {renderContent()}
             </div>
         </div>
     );

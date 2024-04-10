@@ -1,0 +1,36 @@
+.houseSheet-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.title-tags {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.host-rate{
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+}
+
+.details {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    column-gap: 76px;
+    margin-top: 24px;
+}
+

@@ -1,10 +1,8 @@
 import "/src/styles/Banner.css"
 
 function Banner(props) {
-    const bannerClass = props.filter ? "banner filter" : "banner";
-
     return (
-        <div className={bannerClass}>
+        <div className="banner">
             <img src={props.img} alt="image banniere" />
             <h1>{props.title}</h1>
         </div>

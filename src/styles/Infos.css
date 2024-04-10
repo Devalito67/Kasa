@@ -1,0 +1,16 @@
+.infos-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.collapses-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 100%;
+    row-gap: 30px;
+}

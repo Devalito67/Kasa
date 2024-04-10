@@ -1,11 +1,12 @@
 import Banner from "../components/Banner"
 import Collapse from "../components/Collapse"
 import datasInfos from "../datas/datasInfos.json"
+import "../styles/Infos.css"
 
 function Infos() {
-    return <div>
+    return <div className="infos-container">
         <Banner img="/src/assets/backgroundInfos.jpg"/>
-        <div>
+        <div className="collapses-container">
             {datasInfos.map(item => (
                 <Collapse key={item.title} title={item.title} content={item.content} />
             ))}

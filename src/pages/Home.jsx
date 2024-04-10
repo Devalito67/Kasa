@@ -4,8 +4,8 @@ import "../styles/Home.css"
 import Card from "../components/Card"
 
 function Home() {
-    return <div>
-        <Banner img="/src/assets/backgroundHome.jpg" title="Chez vous, partout et ailleurs" filter />
+    return <div className="home-container">
+        <Banner img="/src/assets/backgroundHome.jpg" title="Chez vous, partout et ailleurs"/>
         <div>
             <div className="cards_container">
                 {DatasFetch().map((data) => (
