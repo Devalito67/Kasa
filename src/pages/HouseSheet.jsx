@@ -1,36 +1,30 @@
 import { useParams } from "react-router-dom";
-import Carroussel from "../components/Carroussel";
+import Carrousel from "../components/Carrousel.jsx";
 import Collapse from "../components/Collapse.jsx";
-import DatasFetch from "../components/DatasFetch"; // Importer la fonction pour récupérer les données
+import DatasFetch from "../components/DatasFetch.jsx"; // Importer la fonction pour récupérer les données
 import Host from "../components/Host.jsx";
 import Tags from "../components/Tags.jsx";
+import Title from "../components/Title.jsx";
+import Rating from "../components/Rating.jsx";
 
 
-function HouseSheet() {
+export default function HouseSheet() {
 
     const { id } = useParams(); // Récupérer l'ID de la carte depuis l'URL
     const cardInfo = DatasFetch().find((data) => data.id === id); // Trouver la carte avec l'ID correspondant
-    console.log(cardInfo)
     if (!cardInfo) {
         return <div>Card not found</div>; // Gérer le cas où la carte n'est pas trouvée
     }
 
     return (
         <div>
-            <Carroussel />
-            <div className="title">
-                <h1>{cardInfo.title}</h1>
-                <h2>{cardInfo.location}</h2>
-            </div>
+            <Carrousel pictures={cardInfo.pictures}/>
+            <Title title={{title: cardInfo.title, location: cardInfo.location}} />
             <Tags tags={cardInfo.tags} />
             <Host host={cardInfo.host} />
-            <div className="rate">
-                {cardInfo.rating}
-            </div>
+            <Rating rating={cardInfo.rating}/>
             <Collapse key={cardInfo.id + "description"} title="Description" content={cardInfo.description} />
             <Collapse key={cardInfo.id + "equipments"} title="Equipements" content={cardInfo.equipments} />
         </div>
     );
 }
-
-export default HouseSheet;

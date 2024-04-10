@@ -1,0 +1,14 @@
+.title {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.title h1 {
+    color: #FF6060;
+    font-size: 36px;
+}
+
+.title h2 {
+    color: #000;
+    font-size: 18px;
+}
