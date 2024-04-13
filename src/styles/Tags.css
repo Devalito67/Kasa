@@ -8,13 +8,22 @@
     display: flex;
     color: #FFF;
     text-align: center;
-    font-size: 14px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 700;
+    line-height: 142.6%;
     background-color: #ff6060;
     border-radius: 10px;
-    width: 115px;
-    min-height: 25px;
+    width: 85px;
+    min-height: 18px;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+    .tags button {
+        font-size: 14px;
+        width: 115px;
+        min-height: 25px;
+    }
 }

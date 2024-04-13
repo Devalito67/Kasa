@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import "/src/styles/Card.css";
+import PropTypes from "prop-types";
 
-function Card(props) {
+export default function Card(props) {
   return (
     <Link to={`/card/${props.cardInfo.id}`}>
       <div className="card">
@@ -14,4 +15,6 @@ function Card(props) {
   );
 }
 
-export default Card;
+ Card.propTypes ={
+  cardInfo: PropTypes.object
+ }

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "/src/styles/Collapse.css";
+import PropTypes from "prop-types";
 
-function Collapse({ title, content }) {
+export default function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const renderContent = () => {
@@ -25,7 +26,7 @@ function Collapse({ title, content }) {
             <div className="titleInfo">
                 <h3>{title}</h3>
                 <button
-                    className={`collapse-toggle-button ${isOpen ? '' : 'close-collapse'}`}
+                    className={`collapse-toggle-button ${isOpen ? 'open-collapse' : ''}`}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <img src="/src/assets/arrow_back.svg" alt="" />
@@ -38,4 +39,10 @@ function Collapse({ title, content }) {
     );
 }
 
-export default Collapse;
+Collapse.propTypes= {
+title: PropTypes.string,
+content: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.string
+])
+}

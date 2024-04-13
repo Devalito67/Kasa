@@ -1,12 +1,15 @@
 import "/src/styles/Banner.css"
+import PropTypes from "prop-types"
 
-function Banner(props) {
+export default function Banner(props) {
     return (
         <div className="banner">
             <img src={props.img} alt="image banniere" />
-            <h1>{props.title}</h1>
         </div>
     );
 }
 
-export default Banner;
+Banner.propTypes = {
+    img: PropTypes.string,
+    title: PropTypes.string
+}

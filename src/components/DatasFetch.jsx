@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "/src/styles/DataFetch.css";
 
-function DataFetch() {
+export default function DataFetch() {
  const [dataList, setDataList] = useState([]);
 
   useEffect(() => {
@@ -19,5 +19,3 @@ function DataFetch() {
   }, []);
 return dataList;
 }
-
-export default DataFetch;

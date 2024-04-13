@@ -33,7 +33,7 @@ export default function HouseSheet() {
             </div>
             <div className="details">
                 <Collapse key={cardInfo.id + "description"} title="Description" content={cardInfo.description} />
-                <Collapse key={cardInfo.id + "equipments"} title="Equipements" content={cardInfo.equipments} />
+                <Collapse key={cardInfo.id + "equipments"} title="&Eacute;quipements" content={cardInfo.equipments} />
             </div>
 
         </div>

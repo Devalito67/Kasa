@@ -1,4 +1,5 @@
-import "../styles/Tags.css"
+import "../styles/Tags.css";
+import PropTypes from 'prop-types';
 
 export default function Tags(props) {
     return  <div className="tags">
@@ -6,4 +7,8 @@ export default function Tags(props) {
         <button key={index}>{tag}</button> // Example of rendering tags with unique keys
     ))}
 </div>
+}
+
+Tags.propTypes= {
+    tags: PropTypes.array
 }

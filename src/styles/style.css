@@ -3,21 +3,34 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Montserrat;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 142.6%;
     border: none;
     text-decoration: none;
     list-style-type: none;
 }
 
-
 a, li {
     text-decoration: none;
 }
 
-body {
-    margin: 0 auto;
+#root {
+    display:flex;
+    flex-direction: column;
+    margin: 20px auto 0;
     max-width: 1440px;
-    padding: 45px 100px;
+    min-width: 375px;
+    row-gap: 24px;
+    align-items: center;
 }
+
+html {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+    #root {
+        margin-top: 45px;
+        row-gap: 50px;
+    }
+}
+
+

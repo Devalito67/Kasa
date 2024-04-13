@@ -11,13 +11,18 @@
     justify-content: space-between;
     background-color: #FF6060;
     color: white;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 5px;
+    height: 30px;
+    align-items: center;
 }
 
 .titleInfo h3 {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    line-height: 142.6%;
 }
 
 .descriptionInfo {
@@ -34,17 +39,19 @@
     display: flex;
     top: 0px;
     transition: top 0.5s;
-    position:relative;
-    height:auto;
+    position: relative;
+    height: auto;
 }
 
 .descriptionInfo p {
-    color: black;
-    font-size: 18px;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 142.6%;
 }
 
-.close-collapse {
+.open-collapse {
     transform: rotate(-180deg);
     transition: all 0.5s;
 }
@@ -53,4 +60,19 @@
     transition: all 0.5s;
     background-color: transparent;
     height: 32px;
+}
+
+@media screen and (min-width: 480px) {
+    .titleInfo {
+        padding: 10px 15px;
+        height: 54px;
+    }
+
+    .titleInfo h3 {
+        font-size: 24px;
+    }
+
+    .descriptionInfo p {
+        font-size: 18px;
+    }
 }

@@ -1,4 +1,5 @@
-import "../styles/Rating.css"
+import "../styles/Rating.css";
+import PropTypes from "prop-types";
 
 export default function Rating(props) {
     const rateValue = props.rating
@@ -9,4 +10,8 @@ export default function Rating(props) {
                 rateValue >= rangeElem ? <span key={rangeElem.toString()}><img src="/src/assets/star-active.svg" alt="star-active"/></span> : <span key={rangeElem.toString()}><img src="/src/assets/star-inactive.svg" alt="star-inactive"/></span>
             )}
             </div>
+}
+
+Rating.propTypes= {
+    rating: PropTypes.string
 }
