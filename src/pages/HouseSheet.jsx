@@ -6,7 +6,7 @@ import Host from "../components/Host.jsx";
 import Tags from "../components/Tags.jsx";
 import Title from "../components/Title.jsx";
 import Rating from "../components/Rating.jsx";
-import "../styles/HouseSheet.css"
+import "../styles/HouseSheet.scss"
 import Error from "./Error.jsx";
 
 

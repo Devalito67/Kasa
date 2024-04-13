@@ -1,4 +1,4 @@
-import "../styles/Title.css";
+import "../styles/Title.scss";
 import PropTypes from "prop-types";
 
 export default function Title(props) {

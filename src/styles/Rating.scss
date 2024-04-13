@@ -1,0 +1,11 @@
+.rate {
+    display: flex;
+    
+    img {
+        height: 18px;
+
+        @media screen and (min-width: 480px) {
+            height: 36px;
+        }
+    }
+}

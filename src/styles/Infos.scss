@@ -6,6 +6,10 @@
     width: 100%;
     padding: 0 20px;
     max-width: 1280px;
+
+    @media screen and (min-width: 480px) {
+        row-gap: 38px;
+    }
 }
 
 .collapses-container {
@@ -14,14 +18,8 @@
     max-width: 1024px;
     width: 100%;
     row-gap: 20px;
-}
 
-@media screen and (min-width: 480px) {
-    .infos-container {
-        row-gap: 38px;
-    }
-    
-    .collapses-container {
+    @media screen and (min-width: 480px) {
         display: flex;
         flex-direction: column;
         max-width: 1024px;

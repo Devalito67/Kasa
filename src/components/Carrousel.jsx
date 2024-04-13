@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/Carrousel.css"
+import "../styles/Carrousel.scss"
 import PropTypes from "prop-types";
 
 export default function Carrousel(props) {

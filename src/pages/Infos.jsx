@@ -1,7 +1,7 @@
 import Banner from "../components/Banner"
 import Collapse from "../components/Collapse"
 import datasInfos from "../datas/datasInfos.json"
-import "../styles/Infos.css"
+import "../styles/Infos.scss"
 
 function Infos() {
     return <div className="infos-container">

@@ -5,16 +5,14 @@
     height: 111px;
     overflow: hidden;
     width: 100%;
-}
 
-.banner img {
-    display: flex;
-    object-fit: cover;
-    width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-    .banner {
+    @media screen and (min-width: 480px) {
         height: 223px;
+    }
+
+    img {
+        display: flex;
+        object-fit: cover;
+        width: 100%;
     }
 }

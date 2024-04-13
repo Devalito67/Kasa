@@ -1,4 +1,4 @@
-import "../styles/Rating.css";
+import "../styles/Rating.scss";
 import PropTypes from "prop-types";
 
 export default function Rating(props) {

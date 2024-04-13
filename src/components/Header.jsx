@@ -1,4 +1,4 @@
-import "/src/styles/Header.css"
+import "/src/styles/Header.scss"
 import { NavLink } from "react-router-dom";
 
 function Header() {

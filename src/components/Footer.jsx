@@ -1,4 +1,4 @@
-import '/src/styles/Footer.css'
+import '/src/styles/Footer.scss'
 
 function Footer() {
     return <div className="footer">

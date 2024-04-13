@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "/src/styles/Collapse.css";
+import "/src/styles/Collapse.scss";
 import PropTypes from "prop-types";
 
 export default function Collapse({ title, content }) {

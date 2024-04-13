@@ -1,4 +1,4 @@
-import "../styles/Tags.css";
+import "../styles/Tags.scss";
 import PropTypes from 'prop-types';
 
 export default function Tags(props) {

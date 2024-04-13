@@ -1,4 +1,4 @@
-import "../styles/Host.css"
+import "../styles/Host.scss"
 import PropTypes from "prop-types";
 
 export default function Host(props) {

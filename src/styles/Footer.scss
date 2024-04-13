@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 66px;
+    padding-bottom: 29px;
+    height: 209px;
+    width: 100%;
+
+    p {
+        display: flex;
+        flex-direction: column;
+        height: 46px;
+        justify-content: flex-end;
+        width: 133px;
+        color: #FFF;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+
+        @media screen and (min-width:480px) {
+            width: 513px;
+            font-size: 24px;
+        }
+    }
+}
