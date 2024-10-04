@@ -7,7 +7,7 @@ function App() {
   return <BrowserRouter>
     <Header /> 
     <Router />
-    <Footer />
+    <Footer logo={<img src="/src/assets/logo_footer.png" alt="Logo Kasa" />} footerInfos="&copy; 2024 Kasa. All rights reserved"/>
   </BrowserRouter>
 }
 
