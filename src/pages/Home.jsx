@@ -1,5 +1,5 @@
 import Banner from "../components/Banner"
-import DatasFetch from "../components/DatasFetch"
+import DatasFetch from "../utils/DatasFetch"
 import "../styles/Home.scss"
 import Card from "../components/Card"
 import { useNavigate } from "react-router-dom"

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel.jsx";
 import Collapse from "../components/Collapse.jsx";
-import DatasFetch from "../components/DatasFetch.jsx";
+import DatasFetch from "../utils/DatasFetch.jsx";
 import Host from "../components/Host.jsx";
 import Tags from "../components/Tags.jsx";
 import Title from "../components/Title.jsx";
