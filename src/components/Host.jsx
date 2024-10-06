@@ -38,7 +38,7 @@ const HostStyled = styled.div`
 
     p {
         width: min-content;
-        color: #FF6060;
+        color: var(--primary-color);
         text-align: right;
         font-size: 12px;
         font-style: normal;

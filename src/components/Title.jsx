@@ -21,7 +21,7 @@ const TitleStyled = styled.div`
     flex-direction: column;
 
     h1 {
-        color: #FF6060;
+        color: var(--primary-color);
         font-size: 18px;
         font-weight: 500;
 

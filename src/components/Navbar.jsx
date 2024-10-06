@@ -21,7 +21,7 @@ const NavbarStyled = styled.nav`
         }
 
         a {
-            color: black;
+            color: var(--secondary-color);
         }
 
         .active-class {

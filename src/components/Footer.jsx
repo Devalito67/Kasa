@@ -17,7 +17,7 @@ Footer.propTypes = {
 
 const FooterStyled = styled.footer`
     display: flex;
-    background-color: black;
+    background-color: var(--secondary-color);;
     align-items: center;
     flex-direction: column;
     padding-top: 66px;

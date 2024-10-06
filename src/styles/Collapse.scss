@@ -9,12 +9,13 @@
 .titleInfo {
     display: flex;
     justify-content: space-between;
-    background-color: #FF6060;
+    background-color: var(--primary-color);;
     color: white;
     padding: 10px;
     border-radius: 5px;
     height: 30px;
     align-items: center;
+    cursor: pointer;
 
     @media screen and (min-width: 480px) {
         padding: 10px 15px;
@@ -44,7 +45,7 @@
     height: 0;
 
     p {
-        color: #000;
+        color: var(--secondary-color);
         font-size: 12px;
         font-style: normal;
         font-weight: 400;

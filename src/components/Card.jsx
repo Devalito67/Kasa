@@ -52,7 +52,7 @@ const CardStyled = styled.div`
     bottom: 0;
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.00) 0%, rgba(10, 10, 10, 0.00) 42%, rgba(4, 4, 4, 0.20) 99.99%, rgba(0, 0, 0, 0.50) 100%);
-    background-color: #ff6060;
+    background-color: var(--primary-color);
         h3 {
                 color: #FFF;
                 font-size: 18px;
