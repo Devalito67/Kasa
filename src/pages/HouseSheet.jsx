@@ -11,7 +11,6 @@ import Error from "./Error.jsx";
 
 
 export default function HouseSheet() {
-
     const { id } = useParams();
     const cardInfo = DatasFetch().find((data) => data.id === id);
     if (!cardInfo) {
@@ -20,7 +19,7 @@ export default function HouseSheet() {
 
     return (
         <div className="houseSheet-container">
-            <Carrousel pictures={cardInfo.pictures} />
+            <Carrousel pictures={cardInfo.pictures} cover={cardInfo.cover} title={cardInfo.title}/>
             <div className="infos">
                 <div className="title-tags">
                     <Title title={{ title: cardInfo.title, location: cardInfo.location }} />
