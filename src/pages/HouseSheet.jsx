@@ -22,11 +22,11 @@ export default function HouseSheet() {
             <Carrousel pictures={cardInfo.pictures} cover={cardInfo.cover} title={cardInfo.title}/>
             <div className="infos">
                 <div className="title-tags">
-                    <Title title={{ title: cardInfo.title, location: cardInfo.location }} />
+                    <Title title={cardInfo.title} location={ cardInfo.location } />
                     <Tags tags={cardInfo.tags} />
                 </div>
                 <div className="host-rate">
-                    <Host host={cardInfo.host} />
+                    <Host name={cardInfo.host.name} picture={cardInfo.host.picture}/>
                     <Rating rating={cardInfo.rating} />
                 </div>
             </div>
