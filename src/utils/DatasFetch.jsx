@@ -6,7 +6,7 @@ export default function DataFetch() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/src/datas/housesList.json");
+        const response = await fetch("/datas/housesList.json");
         const datas = await response.json();
        setDataList(datas)
       } catch (error) {

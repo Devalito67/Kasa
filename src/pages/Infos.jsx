@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Banner from "../components/Banner"
 import Collapse from "../components/Collapse"
-import datasInfos from "../datas/datasInfos.json"
+import datasInfos from "/datas/datasInfos.json"
 
 function Infos() {
     return <InfosStyled>
