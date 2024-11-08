@@ -5,7 +5,7 @@ import datasInfos from "../datas/datasInfos.json"
 
 function Infos() {
     return <InfosStyled>
-        <Banner img="/src/assets/backgroundInfos.jpg"/>
+        <Banner bannerBackground="/src/assets/backgroundInfos.jpg"/>
         <div className="collapses-container">
             {datasInfos.map(item => (
                 <Collapse key={item.title} title={item.title} content={item.content} />
