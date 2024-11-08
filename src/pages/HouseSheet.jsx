@@ -11,8 +11,10 @@ import Error from "./Error.jsx";
 
 
 export default function HouseSheet() {
+const dataPath = "/datas/housesList.json"
+
     const { id } = useParams();
-    const cardInfo = DatasFetch().find((data) => data.id === id);
+    const cardInfo = DatasFetch({dataPath}).find((data) => data.id === id);
     if (!cardInfo) {
         return <Error />
     }

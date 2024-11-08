@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom"
 
 function Home() {
     const navigate = useNavigate();
+const dataPath = "/datas/housesList.json"
 
     return <div className="home-container">
         <div className="banner-container">
@@ -16,7 +17,7 @@ function Home() {
             </div>
         </div>
         <div className="cards-container">
-            {DatasFetch().map((data) => (
+            {DatasFetch({dataPath}).map((data) => (
                 <Card
                     key={data.id}
                     title={data.title}

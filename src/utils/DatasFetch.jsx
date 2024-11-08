@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-export default function DataFetch() {
+export default function DataFetch({dataPath}) {
  const [dataList, setDataList] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/datas/housesList.json");
+        const response = await fetch(dataPath);
         const datas = await response.json();
        setDataList(datas)
       } catch (error) {
@@ -15,6 +15,6 @@ export default function DataFetch() {
     };
 
     fetchData();
-  }, []);
+  }, [dataPath]);
 return dataList;
 }

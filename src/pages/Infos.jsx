@@ -1,13 +1,14 @@
 import styled from "styled-components"
 import Banner from "../components/Banner"
 import Collapse from "../components/Collapse"
-import datasInfos from "/datas/datasInfos.json"
+import DatasFetch from "../utils/DatasFetch"
 
 function Infos() {
+    const dataPath = "/datas/datasInfos.json"
     return <InfosStyled>
         <Banner bannerBackground="/assets/backgroundInfos.jpg"/>
         <div className="collapses-container">
-            {datasInfos.map(item => (
+            {DatasFetch({dataPath}).map(item => (
                 <Collapse key={item.title} title={item.title} content={item.content} />
             ))}
         </div>
