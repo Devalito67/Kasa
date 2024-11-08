@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "/src/styles/DataFetch.scss";
 
 export default function DataFetch() {
  const [dataList, setDataList] = useState([]);

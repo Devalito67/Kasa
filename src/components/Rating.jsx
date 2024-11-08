@@ -1,17 +1,29 @@
-import "../styles/Rating.scss";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 
-export default function Rating(props) {
-    const rateValue = props.rating
+export default function Rating({rating}) {
+    const rateValue = rating
 
     const range = [1, 2, 3, 4, 5]
-    return <div className="rate">
+    return <RatingStyled>
             {range.map((rangeElem) =>
                 rateValue >= rangeElem ? <span key={rangeElem.toString()}><img src="/src/assets/star-active.svg" alt="star-active"/></span> : <span key={rangeElem.toString()}><img src="/src/assets/star-inactive.svg" alt="star-inactive"/></span>
             )}
-            </div>
+            </RatingStyled>
 }
 
 Rating.propTypes= {
     rating: PropTypes.string
 }
+
+const RatingStyled = styled.div`
+    display: flex;
+    
+    img {
+        height: 18px;
+
+        @media screen and (min-width: 480px) {
+            height: 36px;
+        }
+    }
+`;
