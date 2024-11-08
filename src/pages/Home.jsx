@@ -9,7 +9,7 @@ function Home() {
 
     return <div className="home-container">
         <div className="banner-container">
-            <Banner className="banner" bannerBackground="/src/assets/backgroundHome.jpg" />
+            <Banner className="banner" bannerBackground="/assets/backgroundHome.jpg" />
             <div className="banner-text">
                 <p className="text">Chez vous,&nbsp;</p>
                 <p className="text">partout et ailleurs</p>

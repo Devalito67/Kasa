@@ -12,10 +12,10 @@ export default function Carrousel({pictures, cover, title}) {
             return <img src={cover} alt={title} />
         } else {
             return <>
-                <button className="previous-arrow" onClick={prevSlide}><img src="/src/assets/previous-arrow.png" alt="previous-arrow" /></button>
+                <button className="previous-arrow" onClick={prevSlide}><img src="/assets/previous-arrow.png" alt="previous-arrow" /></button>
                 <img src={pictures[currentIndex]} alt={`Slide ${currentIndex}`} />
                 <p className="imageNumber">{currentIndex + 1}/{pictures.length}</p>
-                <button className="next-arrow" onClick={nextSlide}><img src="/src/assets/next-arrow.png" alt="next-arrow" /></button>
+                <button className="next-arrow" onClick={nextSlide}><img src="/assets/next-arrow.png" alt="next-arrow" /></button>
             </>;
         }
     }

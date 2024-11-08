@@ -28,7 +28,7 @@ export default function Collapse({ title, content }) {
                 <button
                     className={`collapse-toggle-button ${isOpen ? 'open-collapse' : ''}`}   
                 >
-                    <img src="/src/assets/arrow_back.svg" alt="" />
+                    <img src="/assets/arrow_back.svg" alt="" />
                 </button>
             </div>
             <div className={`descriptionInfo ${isOpen ? 'open' : ''}`}>
